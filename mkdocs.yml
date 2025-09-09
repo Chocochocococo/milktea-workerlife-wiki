@@ -1,0 +1,70 @@
+# mkdocs.yml
+site_name: 奶茶勞工生活
+site_url: https://chocochocococo.github.io/milktea-workerlife-wiki/  # 換成您的網址
+site_author: 奶茶勞工生活說明書
+
+# 外觀設定
+theme:
+  name: material
+  language: zh-TW # 介面語言設為中文
+  logo: assets/logo.png # 您的 Logo 檔案路徑
+  favicon: assets/favicon.png # 您的 Favicon 檔案路徑
+  font: Noto Sans Traditional Chinese
+  palette:
+    # 淺色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple # 主色調，可選 brown, teal, orange 等
+      accent: teal # 強調色，可選 amber, indigo 等
+      toggle:
+        icon: material/weather-sunny
+        name: 切換至深色模式
+    # 深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: 切換至淺色模式
+  features:
+    - header.autohide # 向上滾動時自動顯示頂部導覽列，體驗更佳
+    - navigation.instant # 啟用快速載入，體驗更流暢
+    - navigation.tracking # 左側選單會自動追蹤並展開您所在的頁面
+    - navigation.sections # 讓左側選單的分類更清晰
+    - navigation.top # 返回頂部按鈕
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+# 導覽列設定
+nav:
+  - 首頁: index.md
+  - 開始勞工生活: introduce.md
+  - 指令說明: 
+    - 指令一覽: command/commandlist.md
+    - 一般指令: command/commandfornormal.md
+    - 工作指令: command/commandforwork.md
+    - 交易指令: command/commandfortrade.md
+    - 飲品指令: command/commandfordrink.md
+    - 伴侶指令: command/commandforpartner.md
+    - 寵物指令: command/commandforpet.md
+    - 冒險指令: command/commandforadv.md
+  - 各項目一覽:
+    - 飲品一覽: list/drinklist.md
+    - 商品一覽: list/shoplist.md
+    - 原料一覽: list/itemlist.md
+    - 冒險地點一覽: list/advlocationlist.md
+    - 冒險怪物一覽: list/advmonsterlist.md
+    - 冒險頭目一覽: list/advbosslist.md
+
+# Markdown 擴充功能
+markdown_extensions:
+  - admonition # 提示框
+  - pymdownx.details # 可折疊區塊
+  - pymdownx.superfences # 程式碼塊加強
+  
+  # ✨ 新增的目錄功能 ✨
+  - toc:
+      permalink: true # 為每個標題增加一個可點擊的錨點連結
+      toc_depth: 3 # 目錄顯示到H3標題，您可以依需求調整
