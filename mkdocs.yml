@@ -36,8 +36,6 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
-  extra_css:
-    - stylesheets/extra.css
 
 # 導覽列設定
 nav:
@@ -70,3 +68,6 @@ markdown_extensions:
   - toc:
       permalink: true # 為每個標題增加一個可點擊的錨點連結
       toc_depth: 3 # 目錄顯示到H3標題，您可以依需求調整
+
+extra_css:
+    - stylesheets/extra.css
