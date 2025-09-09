@@ -1,128 +1,101 @@
 /* ==========================================================================
-   Milktea Workerlife Wiki - Custom CSS by Gemini
+   Milktea Workerlife Wiki - Milk Cocoa & Chocolate Theme
    ========================================================================== */
 
+/* --- 變數定義：在這裡統一定義顏色，方便未來修改 --- */
+
+/* 🎨 淺色模式 (牛奶可可) */
+[data-md-color-scheme="default"] {
+  --bg-color: #F5F0E8;            /* 背景: 溫暖的米杏色 */
+  --text-color: #5D4037;          /* 文字: 牛奶可可棕 */
+  --heading-color: #4E342E;       /* 標題: 深可可棕 */
+  --accent-color: #D2691E;        /* 強調色: 巧克力橘 (像焦糖醬) */
+  --accent-light-bg: rgba(210, 105, 30, 0.08); /* 強調色的淡背景 */
+  --border-color: #D7CCC8;        /* 邊框: 淺褐色 */
+  --code-bg-color: #EFEBE9;       /* 程式碼背景 */
+  --table-header-bg: #EFEBE9;     /* 表格標題背景 */
+}
+
+/* 🎨 深色模式 (黑巧克力) */
+[data-md-color-scheme="slate"] {
+  --bg-color: #261F1A;            /* 背景: 濃郁黑巧克力 */
+  --text-color: #D7CCC8;          /* 文字: 淺可可色 */
+  --heading-color: #EFEBE9;       /* 標題: 奶油白 */
+  --accent-color: #FFCC80;        /* 強調色: 焦糖拿鐵色 */
+  --accent-light-bg: rgba(255, 204, 128, 0.1); /* 強調色的淡背景 */
+  --border-color: #4E342E;        /* 邊框: 深可可棕 */
+  --code-bg-color: #3E2723;       /* 程式碼背景 */
+  --table-header-bg: #3E2723;     /* 表格標題背景 */
+}
+
 /* --- 整體與字體設定 --- */
+body {
+  background-color: var(--bg-color); /* 應用背景色 */
+}
 .md-typeset {
-  line-height: 1.7; /* 增加行高，提升閱讀舒適度 */
-  font-size: 1.05rem; /* 稍微加大基本字體 */
-  color: #333; /* 使用深灰色代替純黑，文字更柔和 */
+  line-height: 1.75;
+  font-size: 1.05rem;
+  color: var(--text-color);
 }
 
 /* --- 標題 (Headings) --- */
-
-/* H1: 頁面主標題 */
-.md-content h1 {
-  color: #1a237e; /* 使用更深的靛藍色，顯得穩重 */
+.md-content h1, .md-content h2, .md-content h3, .md-content h4 {
+  color: var(--heading-color);
   font-weight: 700;
+}
+.md-content h1 {
+  border-bottom: 2px solid var(--border-color);
   padding-bottom: 0.5em;
-  border-bottom: 2px solid #e0e0e0; /* 淡灰色底線 */
 }
-
-/* H2: 主要段落標題 */
 .md-content h2 {
-  color: #2B65A9; /* 主要的沉靜藍 */
-  font-weight: 600;
   margin-top: 2.5em;
-  margin-bottom: 1em;
-  padding: 0.4em 0.8em;
-  background-color: rgba(43, 101, 169, 0.05); /* 帶有透明度的淡藍色背景 */
-  border-left: 6px solid #2B65A9; /* 左側的實心藍色邊框 */
-  border-radius: 4px;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid var(--accent-light-bg);
 }
-
-/* H3: 次要標題 */
-.md-content h3 {
-  color: #333;
-  font-weight: 600;
-  margin-top: 2em;
-  border-bottom: 2px dotted #ccc; /* 灰色虛線底線 */
-  padding-bottom: 0.3em;
-}
-
-/* H4: 更次要的標題 */
-.md-content h4 {
-  color: #555;
-  font-weight: 600;
-  text-transform: uppercase; /* 轉為大寫，增加設計感 */
-}
-
 
 /* --- 連結 (Links) --- */
 .md-typeset a {
-  color: #2B65A9; /* 使用與 H2 相同的藍色 */
-  font-weight: 500;
-  text-decoration: none; /* 移除預設底線 */
-  border-bottom: 1px solid rgba(43, 101, 169, 0.3);
-  transition: all 0.2s ease-in-out; /* 平滑過渡效果 */
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px dotted var(--accent-color);
 }
-
 .md-typeset a:hover {
-  color: #E97451; /* 滑鼠移上去時變為珊瑚橘 */
-  background-color: rgba(233, 116, 81, 0.1);
-  border-bottom-color: #E97451;
+  background-color: var(--accent-light-bg);
+  border-bottom-style: solid;
 }
 
 /* --- 引用區塊 (Blockquotes) --- */
 .md-typeset blockquote {
-  font-style: italic;
-  color: #555;
-  background-color: #f8f9fa; /* 非常淡的灰色背景 */
-  border-left: 5px solid #E97451; /* 使用珊瑚橘作為邊框 */
-  padding: 1em 1.5em;
-  border-radius: 5px;
-}
-
-.md-typeset blockquote p {
-  margin-bottom: 0; /* 移除引用區塊內段落的預設邊距 */
+  background-color: var(--accent-light-bg);
+  border-left: 5px solid var(--accent-color);
+  color: var(--text-color);
+  font-style: normal;
+  border-radius: 4px;
 }
 
 /* --- 程式碼 (Code) --- */
-
-/* 行內程式碼 `code` */
 .md-typeset code {
-  color: #c7254e; /* 程式碼使用桃紅色 */
-  background-color: #f9f2f4;
-  padding: 0.2em 0.4em;
+  background-color: var(--code-bg-color);
+  color: var(--accent-color);
   border-radius: 4px;
   font-size: 0.9em;
+  padding: 0.2em 0.4em;
 }
-
-/* 程式碼區塊 <pre><code> */
-.md-typeset pre {
-  border-radius: 8px; /* 圓角更大一些 */
-  border: 1px solid #e0e0e0;
-}
-
 .md-typeset pre > code {
-  background-color: #2d2d2d; /* 深色背景 */
+  background-color: transparent; /* 父元素 pre 會處理背景 */
 }
 
 /* --- 表格 (Tables) --- */
-.md-typeset table {
-  border: 1px solid #e0e0e0;
-  border-collapse: collapse; /* 讓邊框合併 */
-}
-
 .md-typeset th {
-  background-color: #f5f7f9; /* 表頭背景色 */
-  font-weight: 600;
-  color: #2B65A9; /* 表頭文字使用主色調 */
+  background-color: var(--table-header-bg);
+  color: var(--heading-color);
+  font-weight: 700;
 }
-
-.md-typeset th, .md-typeset td {
-  border: 1px solid #e0e0e0;
-  padding: 0.8em 1em;
+.md-typeset th, .md-typeset td, .md-typeset table {
+  border: 1px solid var(--border-color);
 }
-
 .md-typeset tr:nth-child(even) {
-  background-color: #f8f9fa; /* 偶數行加上淡灰色背景 */
-}
-
-/* --- 水平分隔線 (Horizontal Rule) --- */
-.md-typeset hr {
-  height: 2px;
-  background-color: #e0e0e0;
-  border: none;
-  margin: 2em 0;
+  background-color: var(--accent-light-bg);
 }

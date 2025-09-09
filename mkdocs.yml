@@ -4,38 +4,44 @@ site_url: https://chocochocococo.github.io/milktea-workerlife-wiki/  # 換成您
 site_author: 奶茶勞工生活說明書
 
 # 外觀設定
+# mkdocs.yml
+
+# --- 外觀設定 ---
+# 請將您原本的 theme 區塊完整換成下面這段
 theme:
   name: material
-  language: zh-TW # 介面語言設為中文
-  logo: assets/logo.png # 您的 Logo 檔案路徑
-  favicon: assets/favicon.png # 您的 Favicon 檔案路徑
-  font: Noto Sans Traditional Chinese
-  # palette:
-    # 淺色模式
-   # - media: "(prefers-color-scheme: light)"
-    #  scheme: default
-    #  primary: deep purple # 主色調，可選 brown, teal, orange 等
-    #  accent: teal # 強調色，可選 amber, indigo 等
-    #  toggle:
-    #    icon: material/weather-sunny
-    #    name: 切換至深色模式
-  # 深色模式
-  #  - media: "(prefers-color-scheme: dark)"
-  #    scheme: slate
-  #    primary: deep purple
-  #    accent: teal
-  #    toggle:
-  #     icon: material/weather-night
-  #     name: 切換至淺色模式
+  language: zh-TW
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   features:
-    - header.autohide # 向上滾動時自動顯示頂部導覽列，體驗更佳
-    - navigation.instant # 啟用快速載入，體驗更流暢
-    - navigation.tracking # 左側選單會自動追蹤並展開您所在的頁面
-    - navigation.sections # 讓左側選單的分類更清晰
-    - navigation.top # 返回頂部按鈕
+    - header.autohide
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
+  
+  # ✨ 啟用顏色選擇器 (淺色/深色模式切換) ✨
+  palette:
+    # 淺色模式 (牛奶可可)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # "default" 是淺色模式的代號
+      primary: brown # 主題色調，可選 brown, teal, orange 等
+      accent: deep-orange # 強調色，可選 amber, indigo 等
+      toggle:
+        icon: material/weather-sunny
+        name: 切換至深色模式
+        
+    # 深色模式 (黑巧克力)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate # "slate" 是深色模式的代號
+      primary: brown
+      accent: deep-orange
+      toggle:
+        icon: material/weather-night
+        name: 切換至淺色模式
 
 # 導覽列設定
 nav:
