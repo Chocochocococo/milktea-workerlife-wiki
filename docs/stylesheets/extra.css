@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Milktea Workerlife Wiki - Custom CSS by Gemini
+   ========================================================================== */
+
+/* --- 整體與字體設定 --- */
+.md-typeset {
+  line-height: 1.7; /* 增加行高，提升閱讀舒適度 */
+  font-size: 1.05rem; /* 稍微加大基本字體 */
+  color: #333; /* 使用深灰色代替純黑，文字更柔和 */
+}
+
+/* --- 標題 (Headings) --- */
+
+/* H1: 頁面主標題 */
+.md-content h1 {
+  color: #1a237e; /* 使用更深的靛藍色，顯得穩重 */
+  font-weight: 700;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #e0e0e0; /* 淡灰色底線 */
+}
+
+/* H2: 主要段落標題 */
+.md-content h2 {
+  color: #2B65A9; /* 主要的沉靜藍 */
+  font-weight: 600;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  padding: 0.4em 0.8em;
+  background-color: rgba(43, 101, 169, 0.05); /* 帶有透明度的淡藍色背景 */
+  border-left: 6px solid #2B65A9; /* 左側的實心藍色邊框 */
+  border-radius: 4px;
+}
+
+/* H3: 次要標題 */
+.md-content h3 {
+  color: #333;
+  font-weight: 600;
+  margin-top: 2em;
+  border-bottom: 2px dotted #ccc; /* 灰色虛線底線 */
+  padding-bottom: 0.3em;
+}
+
+/* H4: 更次要的標題 */
+.md-content h4 {
+  color: #555;
+  font-weight: 600;
+  text-transform: uppercase; /* 轉為大寫，增加設計感 */
+}
+
+
+/* --- 連結 (Links) --- */
+.md-typeset a {
+  color: #2B65A9; /* 使用與 H2 相同的藍色 */
+  font-weight: 500;
+  text-decoration: none; /* 移除預設底線 */
+  border-bottom: 1px solid rgba(43, 101, 169, 0.3);
+  transition: all 0.2s ease-in-out; /* 平滑過渡效果 */
+}
+
+.md-typeset a:hover {
+  color: #E97451; /* 滑鼠移上去時變為珊瑚橘 */
+  background-color: rgba(233, 116, 81, 0.1);
+  border-bottom-color: #E97451;
+}
+
+/* --- 引用區塊 (Blockquotes) --- */
+.md-typeset blockquote {
+  font-style: italic;
+  color: #555;
+  background-color: #f8f9fa; /* 非常淡的灰色背景 */
+  border-left: 5px solid #E97451; /* 使用珊瑚橘作為邊框 */
+  padding: 1em 1.5em;
+  border-radius: 5px;
+}
+
+.md-typeset blockquote p {
+  margin-bottom: 0; /* 移除引用區塊內段落的預設邊距 */
+}
+
+/* --- 程式碼 (Code) --- */
+
+/* 行內程式碼 `code` */
+.md-typeset code {
+  color: #c7254e; /* 程式碼使用桃紅色 */
+  background-color: #f9f2f4;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* 程式碼區塊 <pre><code> */
+.md-typeset pre {
+  border-radius: 8px; /* 圓角更大一些 */
+  border: 1px solid #e0e0e0;
+}
+
+.md-typeset pre > code {
+  background-color: #2d2d2d; /* 深色背景 */
+}
+
+/* --- 表格 (Tables) --- */
+.md-typeset table {
+  border: 1px solid #e0e0e0;
+  border-collapse: collapse; /* 讓邊框合併 */
+}
+
+.md-typeset th {
+  background-color: #f5f7f9; /* 表頭背景色 */
+  font-weight: 600;
+  color: #2B65A9; /* 表頭文字使用主色調 */
+}
+
+.md-typeset th, .md-typeset td {
+  border: 1px solid #e0e0e0;
+  padding: 0.8em 1em;
+}
+
+.md-typeset tr:nth-child(even) {
+  background-color: #f8f9fa; /* 偶數行加上淡灰色背景 */
+}
+
+/* --- 水平分隔線 (Horizontal Rule) --- */
+.md-typeset hr {
+  height: 2px;
+  background-color: #e0e0e0;
+  border: none;
+  margin: 2em 0;
+}
