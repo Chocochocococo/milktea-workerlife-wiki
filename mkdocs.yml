@@ -10,23 +10,23 @@ theme:
   logo: assets/logo.png # 您的 Logo 檔案路徑
   favicon: assets/favicon.png # 您的 Favicon 檔案路徑
   font: Noto Sans Traditional Chinese
-  palette:
+  # palette:
     # 淺色模式
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple # 主色調，可選 brown, teal, orange 等
-      accent: teal # 強調色，可選 amber, indigo 等
-      toggle:
-        icon: material/weather-sunny
-        name: 切換至深色模式
-    # 深色模式
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep purple
-      accent: teal
-      toggle:
-        icon: material/weather-night
-        name: 切換至淺色模式
+   # - media: "(prefers-color-scheme: light)"
+    #  scheme: default
+    #  primary: deep purple # 主色調，可選 brown, teal, orange 等
+    #  accent: teal # 強調色，可選 amber, indigo 等
+    #  toggle:
+    #    icon: material/weather-sunny
+    #    name: 切換至深色模式
+  # 深色模式
+  #  - media: "(prefers-color-scheme: dark)"
+  #    scheme: slate
+  #    primary: deep purple
+  #    accent: teal
+  #    toggle:
+  #     icon: material/weather-night
+  #     name: 切換至淺色模式
   features:
     - header.autohide # 向上滾動時自動顯示頂部導覽列，體驗更佳
     - navigation.instant # 啟用快速載入，體驗更流暢
