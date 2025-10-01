@@ -61,8 +61,6 @@ nav:
     - 商品一覽: list/shoplist.md
     - 原料一覽: list/itemlist.md
     - 冒險地點一覽: list/advlocationlist.md
-    - 冒險怪物一覽: list/advmonsterlist.md
-    - 冒險頭目一覽: list/advbosslist.md
 
 # Markdown 擴充功能
 markdown_extensions:
