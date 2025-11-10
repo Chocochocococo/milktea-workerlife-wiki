@@ -56,6 +56,7 @@ nav:
     - 伴侶指令: command/commandforpartner.md
     - 寵物指令: command/commandforpet.md
     - 冒險指令: command/commandforadv.md
+    - 大富翁指令: command/commandmonopoly.md
   - 各項目一覽:
     - 飲品一覽: list/drinklist.md
     - 商品一覽: list/shoplist.md
