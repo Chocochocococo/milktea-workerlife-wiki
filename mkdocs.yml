@@ -47,6 +47,7 @@ theme:
 nav:
   - 首頁: index.md
   - 開始勞工生活: introduce.md
+  - 系統介紹: systeminfo.md
   - 指令說明: 
     - 指令一覽: command/commandlist.md
     - 一般指令: command/commandfornormal.md
