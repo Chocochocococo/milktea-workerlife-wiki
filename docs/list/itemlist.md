@@ -48,3 +48,4 @@
 | garlic        | 大蒜  | 40  |
 | kashou        | 花椒  | 50  |
 | almond_powder | 杏仁粉 | 50  |
+| whitewine     | 白酒   | 70  |
