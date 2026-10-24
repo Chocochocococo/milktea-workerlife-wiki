@@ -37,7 +37,7 @@
 | salt          | 鹽巴  | 32  |
 | butter        | 奶油  | 40  |
 | cheese        | 乳酪  | 50  |
-| shyouyu       | 醬油  | 35  |
+| shyouyu       | 醬油  | 30  |
 | koshou        | 胡椒鹽 | 43  |
 | toukarasi     | 辣椒粉 | 46  |
 | chicken       | 雞肉  | 70  |
@@ -49,3 +49,29 @@
 | kashou        | 花椒  | 50  |
 | almond_powder | 杏仁粉 | 50  |
 | whitewine     | 白酒   | 70  |
+| miso          | 信州味噌 | 30  |
+| vinegared_rice | 醋飯   | 30  |
+| wasabi        | 現磨山葵 | 40  |
+
+## 商店沒有販售的原料
+以下原料無法在官方商店購買，一鍵備料也買不到。
+
+### 心湖原料
+在心湖撿石子、召喚隕石、餵湖或轉蛋取得，可以用`/石子 兌換`換成奶茶幣。
+
+| 英文ID          | 中文名字  | 兌換價格 |
+| ------------- | ----- | -- |
+| pebble_common    | 小石子   | 10 |
+| pebble_rare      | 方糖    | 100 |
+| pebble_legendary | 心湖結晶  | 500 |
+
+### 節慶限定原料
+只能從節慶限定轉蛋機抽到，詳見[節慶活動](../festival.md)。可以賣給官方商店。
+
+| 英文ID          | 中文名字  | 商店收購價 |
+| ------------- | ----- | -- |
+| halloween_pumpkin_paste | 幽光南瓜泥 | 20 |
+| halloween_black_pearl   | 黑貓眼珍珠 | 20 |
+
+### 傳說原料
+在冒險地點探索取得，各地點的傳說原料請見[冒險地點一覽](advlocationlist.md)。
