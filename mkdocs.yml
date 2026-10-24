@@ -48,25 +48,38 @@ nav:
   - 首頁: index.md
   - 開始勞工生活: introduce.md
   - 系統介紹: systeminfo.md
+  - 節慶活動: festival.md
   - 指令說明: 
     - 指令一覽: command/commandlist.md
     - 一般指令: command/commandfornormal.md
+    - 面板指令: command/commandpanel.md
     - 工作指令: command/commandforwork.md
     - 交易指令: command/commandfortrade.md
     - 飲品指令: command/commandfordrink.md
+    - 顧客指令: command/commandcustomer.md
+    - 成就指令: command/commandachievement.md
     - 伴侶指令: command/commandforpartner.md
     - 寵物指令: command/commandforpet.md
     - 冒險指令: command/commandforadv.md
+    - 決鬥指令: command/commandduel.md
     - 大富翁指令: command/commandmonopoly.md
+    - 釣魚指令: command/commandfish.md
+    - 轉蛋指令: command/commandgacha.md
+    - 心湖指令: command/commandpebble.md
   - 各項目一覽:
     - 飲品一覽: list/drinklist.md
     - 商品一覽: list/shoplist.md
     - 原料一覽: list/itemlist.md
     - 冒險地點一覽: list/advlocationlist.md
+    - 顧客一覽: list/customerlist.md
+    - 轉蛋獎品一覽: list/gachalist.md
+    - 短期效果一覽: list/effectlist.md
+    - 成就一覽: list/achievementlist.md
 
 # Markdown 擴充功能
 markdown_extensions:
   - admonition # 提示框
+  - attr_list # 讓標題可以自訂錨點，例如 {#lake-offering}
   - pymdownx.details # 可折疊區塊
   - pymdownx.superfences # 程式碼塊加強
   
